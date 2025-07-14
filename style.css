@@ -1,0 +1,42 @@
+main {
+    background-color: hsl(141, 70%, 80%);
+}
+
+body {
+    background-color: hsl(141, 70%, 90%);
+    color: hsl(141, 70%, 15%);
+    font-family: "Roboto", Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: hsl(141, 70%, 20%);
+}
+
+/* Remove default underline in anchor tags */
+a {
+    text-decoration: none;
+    color: hsl(321, 90%, 30%);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", Verdana, sans-serif;
+    font-weight: 700;
+    text-shadow: 3px 3px rgba(63, 60, 60, 0.5);
+    font-size: 3.5rem;
+    color: hsl(321, 90%, 30%);
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 2rem;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: left;
+    font-size: 1.5rem;
+}

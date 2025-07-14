@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Digital CV</title>
+    <!-- External CSS file link-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font link for Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- Need to get a more professional photo for here.  This is a placeholder for now. -->
+        <img src="https://live.staticflickr.com/65535/54636962585_24f65447d2_m.jpg"
+            alt="Sherry Fisher's profile picture">
+        <h1>Sherry Fisher</h1>
+        <p>Email: <a href="mailto:sherryw17@gmail.com">sherryw17@gmail.com</a></p>
+        <p>Phone: <a href="tel:+13079967292">307-996-7292</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sherryfisher17/">linkedin.com/in/sherryfisher17</a></p>
+        <p>GitHub: <a href="https://github.com/SurfMonkey17">github.com/SurfMonkey17</a></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Education</h2>
+            <ol>
+                <li>Springboard, July-October 2025</li>
+                <li>GameDevHQ, 2023-2025</li>
+                <li>Southern New Hampshire University, Computer Science, 55 credits, GPA: 3.54, 2022-2023</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Technologies</h2>
+            <h3>Web Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>WordPress</li>
+            </ul>
+            <h3>Game Development</h3>
+            <ul>
+                <li>Unity</li>
+                <li>C#</li>
+            </ul>
+            <h3>Other</h3>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Professional Development</h3>
+            <table>
+                <caption>Continuing Education</caption>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Provider</th>
+                        <th>Completion Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Learn OOP in Python</td>
+                        <td>Boot.dev</td>
+                        <td>January 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Learn to Code in Python</td>
+                        <td>Boot.dev</td>
+                        <td>December 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Learn Shells and Terminals</td>
+                        <td>Boot.dev</td>
+                        <td>December 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Front-End Development</td>
+                        <td>Meta</td>
+                        <td>January 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <!--Will update/add projects as have better projects to showcase-->
+            <a href="https://github.com/SurfMonkey17/Space-Shooter-2D.git">Space Shooter Game</a>
+            <p>A 2D space shooter game I am in the process of completing as part of my work at GameDevHQ using Unity.
+            </p>
+            <img src="https://live.staticflickr.com/65535/54637030384_20eaf8b30c_z.jpg" alt="Space Shooter Game"
+                width="350" height="200">
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <form action=""> <!--action to be set later-->
+                <!--Name: Text type-->
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" placeholder="Full Name" id="name" required>
+                </div>
+
+                <!--Email: Text type-->
+                <div>
+                    <label for="email">Email Address: </label>
+                    <input type="text" name="email" placeholder="Email Address" id="email" required>
+                </div>
+
+                <!--Phone Number: Tel type-->
+                <div>
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" name="phone" placeholder="Phone Number" id="phone" required>
+                </div>
+
+                <!--Best time to call: Radio type to only be able to select one. Labels after input here so text is displayed after radio button.-->
+                <div>
+                    <p>Best Time to Call:</p>
+                    <div>
+                        <input type="radio" name="best-time" id="morning" value="Morning">
+                        <label for="morning">Morning</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="best-time" id="afternoon" value="Afternoon">
+                        <label for="afternoon">Afternoon</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="best-time" id="evening" value="Evening">
+                        <label for="evening">Evening</label>
+                    </div>
+                </div>
+
+                <!--Preferred Contact Method: Dropdown menu.-->
+                <div>
+                    <p>Preferred Contact Method: </p>
+                    <label for="preferred-contact">Choose One: </label>
+                    <select name="preferred-contact" id="preferred-contact">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="text">Text</option>
+                        <option value="none">No Preference</option>
+                    </select>
+                </div>
+
+                <!--TextArea for comment: Textarea type-->
+                <div>
+                    <p><label for="comment">Reason for Contact: </label></p>
+                    <!--Added <p> tag to get "Reason for Contact" above text box.-->
+                    <textarea name="comment" placeholder="Enter Message" id="comment" rows="10" cols="50
+                    " required></textarea>
+                </div>
+
+                <!--Submit Button-->
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

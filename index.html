@@ -19,7 +19,7 @@
     <header>
         <!-- Need to get a more professional photo for here.  This is a placeholder for now. -->
         <img src="https://live.staticflickr.com/65535/54636962585_24f65447d2_m.jpg"
-            alt="Sherry Fisher's profile picture">
+            alt="Sherry Fisher's profile picture" id="profile-picture" width="200" height="200">
         <h1>Sherry Fisher</h1>
         <p>Email: <a href="mailto:sherryw17@gmail.com">sherryw17@gmail.com</a></p>
         <p>Phone: <a href="tel:+13079967292">307-996-7292</a></p>
@@ -59,7 +59,7 @@
             </ul>
         </section>
         <section>
-            <h3>Professional Development</h3>
+            <h2>Professional Development</h2>
             <table>
                 <caption>Continuing Education</caption>
                 <thead>
@@ -107,43 +107,45 @@
             <h2>Contact Me</h2>
             <form action=""> <!--action to be set later-->
                 <!--Name: Text type-->
-                <div>
+                <div class="form-input">
                     <label for="name">Name: </label>
                     <input type="text" name="name" placeholder="Full Name" id="name" required>
                 </div>
 
                 <!--Email: Text type-->
-                <div>
+                <div class="form-input">
                     <label for="email">Email Address: </label>
                     <input type="text" name="email" placeholder="Email Address" id="email" required>
                 </div>
 
                 <!--Phone Number: Tel type-->
-                <div>
+                <div class="form-input">
                     <label for="phone">Phone Number: </label>
                     <input type="tel" name="phone" placeholder="Phone Number" id="phone" required>
                 </div>
 
                 <!--Best time to call: Radio type to only be able to select one. Labels after input here so text is displayed after radio button.-->
                 <div>
-                    <p>Best Time to Call:</p>
+                    <p id="best-time">Best Time to Call:</p>
                     <div>
-                        <input type="radio" name="best-time" id="morning" value="Morning">
-                        <label for="morning">Morning</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="best-time" id="afternoon" value="Afternoon">
-                        <label for="afternoon">Afternoon</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="best-time" id="evening" value="Evening">
-                        <label for="evening">Evening</label>
+                        <div>
+                            <input type="radio" name="best-time" id="morning" value="Morning">
+                            <label for="morning">Morning</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="best-time" id="afternoon" value="Afternoon">
+                            <label for="afternoon">Afternoon</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="best-time" id="evening" value="Evening">
+                            <label for="evening">Evening</label>
+                        </div>
                     </div>
                 </div>
 
                 <!--Preferred Contact Method: Dropdown menu.-->
                 <div>
-                    <p>Preferred Contact Method: </p>
+                    <p id="preferred">Preferred Contact Method: </p>
                     <label for="preferred-contact">Choose One: </label>
                     <select name="preferred-contact" id="preferred-contact">
                         <option value="email">Email</option>
@@ -155,7 +157,7 @@
 
                 <!--TextArea for comment: Textarea type-->
                 <div>
-                    <p><label for="comment">Reason for Contact: </label></p>
+                    <p id="reason"><label for="comment">Reason for Contact: </label></p>
                     <!--Added <p> tag to get "Reason for Contact" above text box.-->
                     <textarea name="comment" placeholder="Enter Message" id="comment" rows="10" cols="50
                     " required></textarea>

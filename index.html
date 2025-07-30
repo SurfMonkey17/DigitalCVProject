@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Digital CV</title>
     <!-- External CSS file link-->
     <link rel="stylesheet" href="style.css">
@@ -40,27 +41,29 @@
         </section>
         <section>
             <h2>Technologies</h2>
-            <h3>Web Development</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>WordPress</li>
-            </ul>
-            <h3>Game Development</h3>
-            <ul>
-                <li>Unity</li>
-                <li>C#</li>
-            </ul>
-            <h3>Other</h3>
-            <ul>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Java</li>
-                <li>Git</li>
-            </ul>
+            <div class="technologies">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>WordPress</li>
+                </ul>
+                <h3>Game Development</h3>
+                <ul>
+                    <li>Unity</li>
+                    <li>C#</li>
+                </ul>
+                <h3>Other</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Java</li>
+                    <li>Git</li>
+                </ul>
+            </div>
         </section>
-        <section>
+        <section class="table">
             <h2>Professional Development</h2>
             <table>
                 <caption>Continuing Education</caption>
@@ -166,8 +169,8 @@
                 <div>
                     <p id="reason"><label for="comment">Reason for Contact: </label></p>
                     <!--Added <p> tag to get "Reason for Contact" above text box.-->
-                    <textarea name="comment" placeholder="Enter Message" id="comment" rows="10" cols="50
-                    " required></textarea>
+                    <textarea name="comment" placeholder="Enter Message" id="comment" rows="10" cols="50"
+                        required></textarea>
                 </div>
 
                 <!--Submit Button-->
